@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global SMS 海外短信 · 腾讯云教育产品矩阵</title>
+<style>
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 32px 20px 60px;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .back-link {
+        color: rgba(255,255,255,0.85);
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: color 0.2s;
+    }
+    .back-link:hover { color: #fff; }
+    .page-badge {
+        background: rgba(255,255,255,0.18);
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 14px;
+        border-radius: 20px;
+    }
+
+    .hero-card {
+        background: white;
+        border-radius: 16px;
+        padding: 40px 36px;
+        margin-bottom: 28px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 5px;
+        height: 100%;
+        background: #fee140;
+        border-radius: 16px 0 0 16px;
+    }
+    .hero-icon { font-size: 42px; margin-bottom: 16px; }
+    .hero-tag {
+        display: inline-block;
+        background: #f0f0f8;
+        color: #b8860b;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+    }
+    .hero-name {
+        font-size: 26px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 12px;
+    }
+    .hero-desc {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.8;
+    }
+
+    .section { margin-bottom: 22px; }
+    .section-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #b8860b;
+        margin-bottom: 12px;
+        padding-left: 12px;
+        border-left: 3px solid #fee140;
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .feature-item {
+        background: #f9faff;
+        border-radius: 10px;
+        padding: 16px 18px;
+    }
+    .feature-item .fi-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 6px;
+    }
+    .feature-item .fi-desc {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.7;
+    }
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tag-item {
+        background: #f8f9fe;
+        color: #555;
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 6px;
+        border: 1px solid #eee;
+    }
+    .case-box {
+        background: #f9faff;
+        border-radius: 10px;
+        padding: 18px 20px;
+        font-size: 13px;
+        color: #444;
+        line-height: 1.8;
+    }
+    .case-box strong { color: #1a1a2e; }
+
+    @media (max-width: 640px) {
+        .feature-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-nav">
+        <a href="products.html" class="back-link">← 返回产品矩阵</a>
+        <span class="page-badge">产品详情</span>
+    </div>
+
+    <div class="hero-card">
+        <div class="hero-icon">🌐</div>
+        <div class="hero-tag">全球通信 · 教育通知</div>
+        <div class="hero-name">Global SMS 海外短信</div>
+        <div class="hero-desc">
+            覆盖全球 220+ 国家/地区的短信服务，支持验证码、通知短信、营销短信，为出海教育平台提供稳定可靠的全球通信能力。
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="section">
+            <div class="section-title">核心能力</div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="fi-title">全球覆盖</div>
+                    <div class="fi-desc">覆盖 220+ 国家/地区，出海教育平台全球用户触达。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">三大场景</div>
+                    <div class="fi-desc">验证码、通知短信、营销短信，覆盖教育全通信需求。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">高到达率</div>
+                    <div class="fi-desc">稳定全球运营商通道，保障关键通知不丢失。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">批量发送</div>
+                    <div class="fi-desc">支持批量发送，适配课程提醒、活动通知等大批量场景。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">状态回调</div>
+                    <div class="fi-desc">短信送达状态实时回调，方便业务侧做到达率监控。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">简单易集成</div>
+                    <div class="fi-desc">提供 RESTful API，接入成本低，快速上线。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">教育场景</div>
+            <div class="tag-list">
+                <span class="tag-item">上课/考试提醒短信</span>
+                <span class="tag-item">海外用户验证码登录</span>
+                <span class="tag-item">课程优惠营销推送</span>
+                <span class="tag-item">学习进度通知</span>
+                <span class="tag-item">海外用户触达</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">客户案例</div>
+            <div class="case-box">
+                <strong>多家出海教育平台</strong><br>
+                用于海外用户通知与验证码场景，支撑全球用户注册与登录流程。具体数据由客户授权后补充。
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

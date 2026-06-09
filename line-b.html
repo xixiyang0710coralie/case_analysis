@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>主线 B · 成本与效果平衡 · 腾讯云 × 腾讯教育</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <a href="index.html" class="brand-logo" aria-label="腾讯云">
+        <img src="assets/logo-tencent-cloud.png" alt="腾讯云">
+      </a>
+      <span class="brand-divider"></span>
+      <a href="index.html" class="brand-edu" aria-label="腾讯教育">
+        <img src="assets/logo-tencent-edu.png" alt="腾讯教育">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">方案首页</a>
+      <a href="line-a.html">国内承接</a>
+      <a href="line-b.html" class="active">成本与效果</a>
+      <a href="line-c.html">全球化增长</a>
+      <a href="cooperation.html" class="nav-cta">合作起点</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-line b">
+  <div class="wrap">
+    <span class="hero-eyebrow">主线 B · 成本与效果平衡</span>
+    <h1>不替换 OpenAI<br>给您一张<span class="grad">"按功能算账"</span>的诊断单</h1>
+    <p class="lead">"GPT-4o 调用越多越亏"不是模型问题，是架构没有按功能拆账。我们陪您把每个功能的 ASR / TTS / LLM / 流量成本拆开，再决定哪里该省、哪里该保。</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="sub-nav">
+      <a href="#b1"><span class="num">B1</span>推理加速</a>
+      <a href="#b2"><span class="num">B2</span>端云协同</a>
+      <a href="#b3"><span class="num">B3</span>ASR/TTS 选型</a>
+      <a href="#b4"><span class="num">B4</span>功能级成本诊断</a>
+    </div>
+  </div>
+</section>
+
+<!-- B1 -->
+<section class="section" id="b1">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">B1</span><span class="sub-highlight">推理加速 · 模型瘦身</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · GPT-4o 单价高，但降到 4o-mini 又怕效果掉</strong>
+        <span>两端之间，需要更细的档位选择，按场景配比。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">TACO-LLM + TI-ONE 一站训推</h3>
+      <ul class="bullets">
+        <li><strong>推理加速 30%–2.38x</strong> · 同样 GPU 卡，可服务的并发翻倍以上</li>
+        <li><strong>TI-ONE 平台</strong> · 训练、微调、推理一站式，无需自己拼 K8s + Triton</li>
+        <li><strong>垂直大模型适配</strong> · 已与猿辅导联合做教育垂直模型，路径成熟</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- B2 -->
+<section class="section alt" id="b2">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">B2</span><span class="sub-highlight">端云协同 · 把工作量推到端侧</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 高并发场景下，云端算力是个无底洞</strong>
+        <span>语言学习高峰期并发飙升，按云端架构线性堆 GPU，账单跟着同步涨。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">客户端端渲染 · 1000 路并发 = 云端 10% 成本</h3>
+      <ul class="bullets">
+        <li><strong>端云协同架构</strong> · 渲染 / 简单计算下沉到客户端，云端只做核心推理</li>
+        <li><strong>峰值削平</strong> · 晚高峰资源占用从大量 GPU 降到少量 GPU</li>
+        <li><strong>无感切换</strong> · 学员侧体验不变，账单侧立竿见影</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- B3 -->
+<section class="section" id="b3">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">B3</span><span class="sub-highlight">ASR / TTS 多档位选型</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 一刀切用最贵的版本，浪费大量算力</strong>
+        <span>口语评测要高准确率，背单词只要能识别——如果不同场景按同一档位跑，资源利用率会被拉低。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">按场景配比，按需配比</h3>
+      <ul class="bullets">
+        <li><strong>ASR 多版本</strong> · 大模型引擎（≤110ms / 99.9%） · 标准版 · 热词增强版 · 实时角色分离</li>
+        <li><strong>TTS 三档音色矩阵</strong> · 超自然大模型 15 个 / 大模型 17 个 / 精品 14 个，按场景选</li>
+        <li><strong>声音复刻分级</strong> · 一句话版（5–15 秒）/ 基础版（30 句）/ 专业版（数小时）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- B4 -->
+<section class="section alt" id="b4">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">B4</span><span class="sub-highlight">功能级成本诊断 · 我们陪您算清楚</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 账单按云资源算，但产品决策要按功能算</strong>
+        <span>"哪个功能最烧钱、单位 ARPU 算下来还赚不赚"——这个口径在传统账单里看不到，需要重新拆。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">诊断单（示意）· 把每个功能拆到分</h3>
+      <div class="diag-table">
+        <div class="diag-head">
+          <div>功能模块</div>
+          <div>ASR</div>
+          <div>LLM</div>
+          <div>TTS</div>
+          <div>流量</div>
+          <div>优化建议</div>
+        </div>
+        <div class="diag-row">
+          <div>口语对话陪练</div>
+          <div>高</div>
+          <div>极高</div>
+          <div>高</div>
+          <div>中</div>
+          <div>LLM 切混元 / 蒸馏；TTS 用大模型档</div>
+        </div>
+        <div class="diag-row">
+          <div>背单词跟读</div>
+          <div>高</div>
+          <div>低</div>
+          <div>低</div>
+          <div>低</div>
+          <div>ASR 标准版即可，成本显著下降</div>
+        </div>
+        <div class="diag-row">
+          <div>智能批改</div>
+          <div>中</div>
+          <div>中</div>
+          <div>—</div>
+          <div>低</div>
+          <div>批量异步处理，错峰调度</div>
+        </div>
+        <div class="diag-row">
+          <div>课程内容生成</div>
+          <div>—</div>
+          <div>高</div>
+          <div>高</div>
+          <div>中</div>
+          <div>夜间批量 + 缓存复用</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:12px;">注：以上为方法论示意。实际诊断会基于您 1 个月真实账单 + 调用日志做精确测算。</p>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">三周共创流程</h3>
+      <ul class="bullets">
+        <li><strong>第一阶段</strong> · 拉通您的账单 + 调用日志，输出"功能 × 资源"成本矩阵</li>
+        <li><strong>第二阶段</strong> · 找 TOP 3 烧钱功能，给具体优化路径（含腾讯云替换 / 维持 OpenAI 的对比）</li>
+        <li><strong>第三阶段</strong> · 选 1 个功能跑 POC，实测节省比例</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="wrap" style="text-align:center;">
+    <h2 style="margin-bottom: 12px;">先做一次免费的成本诊断</h2>
+    <p class="section-sub" style="max-width: 640px; margin: 0 auto 28px;">
+      不用换任何东西，先把账拆开看。三周后您拿到的是一张"哪里能省、能省多少"的清单——决定权在您。
+    </p>
+    <a href="cooperation.html" class="btn primary">查看合作起点 →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>腾讯云 · 腾讯教育 · 主线 B 成本与效果</span>
+    <span><a href="line-c.html">下一主线：全球化增长 →</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

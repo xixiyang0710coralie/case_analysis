@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>主线 A · 国内承接 · 腾讯云 × 腾讯教育</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <a href="index.html" class="brand-logo" aria-label="腾讯云">
+        <img src="assets/logo-tencent-cloud.png" alt="腾讯云">
+      </a>
+      <span class="brand-divider"></span>
+      <a href="index.html" class="brand-edu" aria-label="腾讯教育">
+        <img src="assets/logo-tencent-edu.png" alt="腾讯教育">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">方案首页</a>
+      <a href="line-a.html" class="active">国内承接</a>
+      <a href="line-b.html">成本与效果</a>
+      <a href="line-c.html">全球化增长</a>
+      <a href="cooperation.html" class="nav-cta">合作起点</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-line a">
+  <div class="wrap">
+    <span class="hero-eyebrow">主线 A · 国内承接</span>
+    <h1>把"听清 · 想明白 · 说自然"<br>压进 <span class="grad">300ms</span></h1>
+    <p class="lead">中国学员的口语对话体验，是海外架构里比较难处理的一块。我们把可控环节（采集 / ASR / TTS / 传输）压缩到极致，给整体对话留出 300ms 内的首字响应空间。</p>
+  </div>
+</section>
+
+<!-- 子模块导航 -->
+<section class="section-tight">
+  <div class="wrap">
+    <div class="sub-nav">
+      <a href="#a1"><span class="num">A1</span>口语对话链路</a>
+      <a href="#a2"><span class="num">A2</span>教研内容生产</a>
+      <a href="#a3"><span class="num">A3</span>名师声音复刻</a>
+      <a href="#a4"><span class="num">A4</span>学习数据闭环</a>
+    </div>
+  </div>
+</section>
+
+<!-- A1 -->
+<section class="section" id="a1">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">A1</span><span class="sub-highlight">口语对话链路</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 跨网链路把 1 句话拖到很长时间</strong>
+        <span>学员说一句话 → 走海外 ASR → OpenAI 推理 → 海外 TTS → 回传播放，单程延迟大，叠加移动网络抖动，体验上容易出现卡顿感。</span>
+      </div>
+    </div>
+
+    <h3 class="h3">我们的链路：TRTC 实时音视频 + ASR + LLM + TTS</h3>
+    <div class="flow-chain">
+      <div class="flow-step">
+        <span class="flow-name">TRTC 采集</span>
+        <span class="flow-latency">低延迟</span>
+        <span class="flow-desc">音频采集 + 端到端传输</span>
+      </div>
+      <div class="flow-step">
+        <span class="flow-name">ASR</span>
+        <span class="flow-latency">≤110ms</span>
+        <span class="flow-desc">大模型引擎流式识别</span>
+      </div>
+      <div class="flow-step">
+        <span class="flow-name">LLM</span>
+        <span class="flow-latency">流式输出</span>
+        <span class="flow-desc">首 token 输出 / 流式</span>
+      </div>
+      <div class="flow-step">
+        <span class="flow-name">TTS</span>
+        <span class="flow-latency">流式合成</span>
+        <span class="flow-desc">流式合成 + 边出边播</span>
+      </div>
+      <div class="flow-step">
+        <span class="flow-name">TRTC 播放</span>
+        <span class="flow-latency">低延迟</span>
+        <span class="flow-desc">回传 + 端侧播放</span>
+      </div>
+    </div>
+    <p class="flow-total">端到端目标 <strong>&lt; 300ms</strong>（首字响应） · AI 对话整体延迟 <strong>&lt; 1000ms</strong></p>
+
+    <div class="block">
+      <h3 class="h3">为什么必须有 TRTC</h3>
+      <ul class="bullets">
+        <li><strong>跨网传输底座</strong> · TRTC 全球加速节点在低抖动传输上有显著优势，首帧延迟控制在较低水平</li>
+        <li><strong>3A 处理</strong> · 回声消除 / 自动增益 / 噪声抑制内置，对口语评测准确率有明显提升</li>
+        <li><strong>1V1 / 小班课能力</strong> · 课程化场景天然延展，连续 5 年中国视频云市场 No.1</li>
+      </ul>
+    </div>
+
+    <details class="case" style="cursor:pointer;">
+      <summary class="case-summary" style="display:flex;align-items:center;gap:10px;list-style:none;padding:0;margin:0;font-weight:600;font-size:15px;cursor:pointer;">
+        <span class="case-tag" style="flex-shrink:0;">参考案例</span>
+        <span style="flex:1;">感心科技 HaliBoBo · AI 语言学习陪练</span>
+        <span style="color:#006EFF;font-size:13px;font-weight:400;" class="details-toggle">点击展开 ▼</span>
+      </summary>
+      <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px 32px;font-size:13.5px;line-height:1.7;">
+        <div>
+          <div style="font-weight:600;color:#006EFF;margin-bottom:4px;">客户背景</div>
+          <p style="margin:0;color:#444;">感心科技专注 AI 语言学习陪练，主打"AI 教师 1v1 陪练"模式，覆盖 10 万+ 师生用户，拥有 5000+ AI 自习室，客单价近万元，对口语对话延迟和声音自然度要求极高。</p>
+        </div>
+        <div>
+          <div style="font-weight:600;color:#006EFF;margin-bottom:4px;">使用产品</div>
+          <p style="margin:0;color:#444;"><strong>TRTC</strong>（低延迟音视频底座）+ <strong>ASR 大模型引擎</strong>（≤110ms 流式识别）+ <strong>TTS 超自然大模型</strong>（15 个超自然音色，支持声音复刻）</p>
+        </div>
+        <div>
+          <div style="font-weight:600;color:#006EFF;margin-bottom:4px;">解决痛点</div>
+          <p style="margin:0;color:#444;">原先海外 ASR + OpenAI TTS 链路延迟 600–800ms，学员明显感觉"卡顿"；通用 TTS 声音没有人味，学员粘性低；自建 WebRTC 在弱网环境下抖动率高，中国学员侧体验不稳定。</p>
+        </div>
+        <div>
+          <div style="font-weight:600;color:#006EFF;margin-bottom:4px;">业务增值</div>
+          <p style="margin:0;color:#444;">全链路延迟压到 &lt;300ms（首字响应），学员对话体验"无感卡顿"；TTS 名师声音复刻让 AI 老师有辨识度，学员粘性显著提升；TRTC 全球加速节点解决弱网抖动，中国学员侧稳定性大幅提升。</p>
+        </div>
+      </div>
+    </details>
+    <script>
+    document.querySelectorAll('.case-summary').forEach(summary => {
+      const details = summary.parentElement;
+      const toggle = summary.querySelector('.details-toggle');
+      details.addEventListener('toggle', () => {
+        toggle.textContent = details.open ? '收起 ▲' : '点击展开 ▼';
+      });
+    });
+    </script>
+  </div>
+</section>
+
+<!-- A2 -->
+<section class="section alt" id="a2">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">A2</span><span class="sub-highlight">教研内容生产</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 海量课程视频做不动二次加工</strong>
+        <span>教研团队手工剪、手工写文稿、手工生成知识图谱，1 小时课要 2 个人天，规模扩张直接卡死。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">VOD 智能媒资 · 让一节课变成十种素材</h3>
+      <ul class="bullets">
+        <li><strong>语义理解 +67%</strong> · 教育场景专项优化，知识点定位准确率显著提升</li>
+        <li><strong>智能拆条 / 字幕 / 思维导图</strong> · 一节课自动产出短视频、图文、知识卡</li>
+        <li><strong>高清低码省 50% 带宽</strong> · 同样画质，海外学员加载速度翻倍</li>
+      </ul>
+    </div>
+
+    <div class="case">
+      <span class="case-tag">教育案例</span>
+      <h4>作业帮 · 阅文集团</h4>
+      <p>大规模 VOD + 内容 AI 改造的稳定底座，已支撑亿级用户的教研内容流转。</p>
+    </div>
+  </div>
+</section>
+
+<!-- A3 -->
+<section class="section" id="a3">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">A3</span><span class="sub-highlight">名师声音复刻</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 名师 IP 难复用，AI 老师"没有人味"</strong>
+        <span>录一套教材就要请明星老师录半年；AI 老师用通用 TTS 听不出辨识度，学员粘性低。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">TTS 声音复刻 · 5–15 秒一句话版</h3>
+      <ul class="bullets">
+        <li><strong>46 个音色矩阵</strong> · 超自然大模型 15 个 + 大模型 17 个 + 精品 14 个</li>
+        <li><strong>一句话复刻 5–15 秒样本</strong> · 名师声音 IP 化、可批量生产</li>
+        <li><strong>SSML 精细控制</strong> · 情绪、语速、停顿、重音可调</li>
+      </ul>
+    </div>
+
+    <div class="case">
+      <span class="case-tag">落地案例</span>
+      <h4>Kimi · 知乎 · 阅文 · 中信银行</h4>
+      <p>覆盖 AI 助手、有声小说、客服外呼等高频场景；语言学习场景可直接复用，无需重新调优。</p>
+    </div>
+  </div>
+</section>
+
+<!-- A4 -->
+<section class="section alt" id="a4">
+  <div class="wrap">
+    <h2 class="sub-title"><span class="sub-num">A4</span><span class="sub-highlight">学习数据闭环</span></h2>
+
+    <div class="pain-callout">
+      <span class="pain-icon">!</span>
+      <div class="pain-body">
+        <strong>痛点 · 学习数据散在各处，个性化做不深</strong>
+        <span>对话数据在 OpenAI、评测数据在 ASR、内容数据在 CMS、付费数据在 BI——拼不起来，个性化推荐就缺数据底座。</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="h3">学练测评闭环 · 数据底座 + 知识图谱</h3>
+      <ul class="bullets">
+        <li><strong>统一数据中台</strong> · COS + CFS + 数据脱敏（DLP）+ KMS 密钥管理</li>
+        <li><strong>知识图谱构建</strong> · 教研内容 → 学员能力图谱自动对齐</li>
+        <li><strong>个性化推荐</strong> · 基于真实学习路径，而不是通用 LLM 的"猜"</li>
+      </ul>
+    </div>
+
+    <div class="case">
+      <span class="case-tag">教育案例</span>
+      <h4>伴鱼智学 · 新道教育</h4>
+      <p>学练测评一体化已跑通，学员留存与续费数据明显高于通用 AI 助手类产品。</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="wrap" style="text-align:center;">
+    <h2 style="margin-bottom: 12px;">下一步：先把 A1 链路跑通</h2>
+    <p class="section-sub" style="max-width: 640px; margin: 0 auto 28px;">
+      2 周搭一条 TRTC + ASR + TTS 测试链路，跟您现有架构 AB 对比延迟和准确率——数据说话，再决定要不要往下走。
+    </p>
+    <a href="cooperation.html" class="btn primary">查看合作起点 →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>腾讯云 · 腾讯教育 · 主线 A 国内承接</span>
+    <span><a href="line-b.html">下一主线：成本与效果 →</a></span>
+  </div>
+</footer>
+
+<script>
+    document.querySelectorAll(".case summary").forEach(s => {
+      const d = s.parentElement;
+      const t = s.querySelector(".details-toggle");
+      if(t) d.addEventListener("toggle", () => { t.textContent = d.open ? "收起 ▲" : "点击展开 ▼"; });
+    });
+    </script>
+</body>
+</html>

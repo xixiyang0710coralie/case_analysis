@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TI-One 训练平台 · 腾讯云教育产品矩阵</title>
+<style>
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 32px 20px 60px;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .back-link {
+        color: rgba(255,255,255,0.85);
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: color 0.2s;
+    }
+    .back-link:hover { color: #fff; }
+    .page-badge {
+        background: rgba(255,255,255,0.18);
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 14px;
+        border-radius: 20px;
+    }
+
+    .hero-card {
+        background: white;
+        border-radius: 16px;
+        padding: 40px 36px;
+        margin-bottom: 28px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 5px;
+        height: 100%;
+        background: #00d4aa;
+        border-radius: 16px 0 0 16px;
+    }
+    .hero-icon { font-size: 42px; margin-bottom: 16px; }
+    .hero-tag {
+        display: inline-block;
+        background: #f0f0f8;
+        color: #00d4aa;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+    }
+    .hero-name {
+        font-size: 26px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 12px;
+    }
+    .hero-desc {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.8;
+    }
+
+    .section { margin-bottom: 22px; }
+    .section-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #00d4aa;
+        margin-bottom: 12px;
+        padding-left: 12px;
+        border-left: 3px solid #00d4aa;
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .feature-item {
+        background: #f9faff;
+        border-radius: 10px;
+        padding: 16px 18px;
+    }
+    .feature-item .fi-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 6px;
+    }
+    .feature-item .fi-desc {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.7;
+    }
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tag-item {
+        background: #f8f9fe;
+        color: #555;
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 6px;
+        border: 1px solid #eee;
+    }
+    .case-box {
+        background: #f9faff;
+        border-radius: 10px;
+        padding: 18px 20px;
+        font-size: 13px;
+        color: #444;
+        line-height: 1.8;
+    }
+    .case-box strong { color: #1a1a2e; }
+
+    @media (max-width: 640px) {
+        .feature-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-nav">
+        <a href="products.html" class="back-link">← 返回产品矩阵</a>
+        <span class="page-badge">产品详情</span>
+    </div>
+
+    <div class="hero-card">
+        <div class="hero-icon">🤖</div>
+        <div class="hero-tag">AI 训练 · 教育模型定制</div>
+        <div class="hero-name">TI-One 训练平台</div>
+        <div class="hero-desc">
+            一站式机器学习平台，支持 Notebook、任务式建模、自动学习等多种开发模式，为教育机构提供 AI 模型训练、部署和管理能力，支持教育大模型定制。
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="section">
+            <div class="section-title">核心能力</div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="fi-title">主流框架支持</div>
+                    <div class="fi-desc">支持 PyTorch、TensorFlow 等主流框架，开发灵活。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">Notebook 开发环境</div>
+                    <div class="fi-desc">即开即用，无需搭建环境，降低 AI 开发门槛。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">任务式建模</div>
+                    <div class="fi-desc">可视化建模，拖拽式操作，非算法背景也能上手。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">自动学习</div>
+                    <div class="fi-desc">无需写代码，上传数据即可训练模型，适合教育机构快速验证。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">模型一键部署</div>
+                    <div class="fi-desc">训练完成后一键部署，支持在线推理与批量推理。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">混元大模型微调</div>
+                    <div class="fi-desc">支持基于混元底座进行教育场景微调，打造专属教育 AI 能力。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">教育场景</div>
+            <div class="tag-list">
+                <span class="tag-item">教育大模型微调</span>
+                <span class="tag-item">口语测评模型训练</span>
+                <span class="tag-item">作文批改模型训练</span>
+                <span class="tag-item">学习行为预测模型</span>
+                <span class="tag-item">个性化推荐模型训练</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">客户案例</div>
+            <div class="case-box">
+                <strong>多家教育机构与高校</strong><br>
+                用于定制教育 AI 模型，包括口语测评、作文批改、知识点推荐等场景。具体数据由客户授权后补充。
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

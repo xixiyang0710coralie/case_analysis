@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTS 语音合成 · 腾讯云教育产品矩阵</title>
+<style>
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 32px 20px 60px;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .back-link {
+        color: rgba(255,255,255,0.85);
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: color 0.2s;
+    }
+    .back-link:hover { color: #fff; }
+    .page-badge {
+        background: rgba(255,255,255,0.18);
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 14px;
+        border-radius: 20px;
+    }
+
+    .hero-card {
+        background: white;
+        border-radius: 16px;
+        padding: 40px 36px;
+        margin-bottom: 28px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 5px;
+        height: 100%;
+        background: #f093fb;
+        border-radius: 16px 0 0 16px;
+    }
+    .hero-icon { font-size: 42px; margin-bottom: 16px; }
+    .hero-tag {
+        display: inline-block;
+        background: #f0f0f8;
+        color: #f093fb;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+    }
+    .hero-name {
+        font-size: 26px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 12px;
+    }
+    .hero-desc {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.8;
+    }
+
+    .section { margin-bottom: 22px; }
+    .section-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #f093fb;
+        margin-bottom: 12px;
+        padding-left: 12px;
+        border-left: 3px solid #f093fb;
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .feature-item {
+        background: #f9faff;
+        border-radius: 10px;
+        padding: 16px 18px;
+    }
+    .feature-item .fi-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 6px;
+    }
+    .feature-item .fi-desc {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.7;
+    }
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tag-item {
+        background: #f8f9fe;
+        color: #555;
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 6px;
+        border: 1px solid #eee;
+    }
+    .case-box {
+        background: #f9faff;
+        border-radius: 10px;
+        padding: 18px 20px;
+        font-size: 13px;
+        color: #444;
+        line-height: 1.8;
+    }
+    .case-box strong { color: #1a1a2e; }
+
+    @media (max-width: 640px) {
+        .feature-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-nav">
+        <a href="products.html" class="back-link">← 返回产品矩阵</a>
+        <span class="page-badge">产品详情</span>
+    </div>
+
+    <div class="hero-card">
+        <div class="hero-icon">🔊</div>
+        <div class="hero-tag">AI 语音 · 教育内容生产</div>
+        <div class="hero-name">TTS 语音合成</div>
+        <div class="hero-desc">
+            将文本转化为拟人化语音，提供 46 个音色、15 款大模型音色，支持 SSML 标记语言与情绪标签，适用于教材朗读、AI 口语陪练、听力素材制作等教育场景。
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="section">
+            <div class="section-title">核心能力</div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="fi-title">46 个音色 · 多语种</div>
+                    <div class="fi-desc">覆盖中文、英文、日文、韩文等，满足多语种教学场景。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">15 款大模型音色</div>
+                    <div class="fi-desc">拟人度高，支持情绪标签，让 AI 发音更自然、更有感染力。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">一句话声音复刻</div>
+                    <div class="fi-desc">5–15 秒音频即可复刻名师声音，将名师 IP 转化为可规模化的语音资产。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">SSML 标记语言</div>
+                    <div class="fi-desc">可精确控制停顿、语调、情绪，适配教材朗读与口语测评反馈场景。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">流式播放</div>
+                    <div class="fi-desc">TTS 首包延迟约 150ms，支持边合成边播放，适配对话式 AI 场景。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="fi-title">离线音频导出</div>
+                    <div class="fi-desc">支持批量生成听力素材、教材朗读音频，直接用于课程内容生产。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">教育场景</div>
+            <div class="tag-list">
+                <span class="tag-item">教材/绘本自动朗读</span>
+                <span class="tag-item">AI 口语陪练发音输出</span>
+                <span class="tag-item">听力考试素材批量生成</span>
+                <span class="tag-item">名师声音 IP 化</span>
+                <span class="tag-item">多语种发音教学</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">客户案例</div>
+            <div class="case-box">
+                <strong>得到 APP（有声书语音合成）</strong><br>
+                使用 TTS 大模型音色批量生成有声书内容，显著降低人工配音成本，音质达到可发布标准。<br><br>
+                <strong>知乎（盐选内容有声化）</strong><br>
+                将盐选专栏文章转化为音频内容，提升用户沉浸式阅读体验。<br><br>
+                <strong>多家教育客户</strong><br>
+                用于教材朗读与听力素材生产（具体数据由客户授权后补充）。
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
